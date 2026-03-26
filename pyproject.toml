@@ -82,7 +82,6 @@ dev = [
     "flake8-docstrings>=1.7.0",
     "mypy>=1.5.1",
     "bandit>=1.7.5",
-    "pre-commit>=3.3.3",
     "types-requests>=2.31.0",
 ]
 
@@ -90,4 +89,4 @@ dev = [
 Homepage = "https://github.com/r123singh/weather-cli"
 Documentation = "https://github.com/r123singh/weather-cli#readme"
 Repository = "https://github.com/r123singh/weather-cli.git"
-"Bug Tracker" = "https://github.com/r123singh/weather-cli/issues" 
+"Bug Tracker" = "https://github.com/r123singh/weather-cli/issues"

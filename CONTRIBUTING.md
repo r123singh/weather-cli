@@ -98,4 +98,4 @@ Feel free to:
 - Join our [Discord community](https://discord.gg/weather-cli)
 - Email us at support@weather-cli.com
 
-Thank you for contributing to Weather CLI! 
+Thank you for contributing to Weather CLI!

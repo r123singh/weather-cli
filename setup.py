@@ -5,22 +5,25 @@ setup(
     version="1.0.0",
     packages=find_packages(),
     install_requires=[
-        'requests>=2.31.0',
-        'pytz>=2023.3',
-        'matplotlib>=3.7.1',
-        'pandas>=2.0.0',
-        'folium>=0.14.0',
-        'branca>=0.6.0'
+        "requests>=2.31.0",
+        "pytz>=2023.3",
+        "matplotlib>=3.7.1",
+        "pandas>=2.0.0",
+        "folium>=0.14.0",
+        "branca>=0.6.0",
+        "rich>=13.5.2",
+        "typer>=0.9.0",
+        "python-dotenv>=1.0.0",
     ],
     entry_points={
-        'console_scripts': [
-            'weather-cli=app:main',
+        "console_scripts": [
+            "weather-cli=weather_cli.app:main",
         ],
     },
     author="Ramandeep Singh",
     author_email="ramansingh.it42@gmail.com",
     description="A comprehensive command-line weather application with premium features",
-    long_description=open('README.md').read(),
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     keywords="weather, cli, forecast, maps, premium",
     url="https://github.com/r123singh/weather-cli",
@@ -34,7 +37,11 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
     python_requires=">=3.8",
+    include_package_data=True,
+    package_data={
+        "weather_cli": ["*.json"],
+    },
 )
 
 if __name__ == "__main__":
-    setup() 
+    setup()
